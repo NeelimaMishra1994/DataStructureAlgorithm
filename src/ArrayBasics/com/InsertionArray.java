@@ -6,14 +6,12 @@ public class InsertionArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		insertAtspecificPosition();
-		insertAt0thPosition();
-		insertAtLastPosition();
-	}
-	public static void insertAtspecificPosition() {
 		int num[]= {10,20,30,40,50};
-		int elementToinsert = 25;
-		int elementAtIndex = 2;
+		insertAtspecificPosition(num,25,2);
+		insertAt0thPosition(num,25,2);
+		insertAtLastPosition(num,25,num.length);
+	}
+	public static void insertAtspecificPosition(int []num,int elementToinsert, int elementAtIndex) {
 		int num1[] =new int[num.length +1];
 		System.out.println("Array before :" +Arrays.toString(num));
 		for(int i = 0,j=0; i<num1.length;i++) {
@@ -28,10 +26,7 @@ public class InsertionArray {
 
 		
 	}
-	public static void insertAt0thPosition() {
-		int num[]= {10,20,30,40,50};
-		int elementToinsert = 25;
-		int elementAtIndex = 0;
+	public static void insertAt0thPosition(int []num,int elementToinsert, int elementAtIndex) {
 		int num1[] =new int[num.length +1];
 		System.out.println("Array before :" +Arrays.toString(num));
 		for(int i = 0,j=0; i<num1.length;i++) {
@@ -46,10 +41,7 @@ public class InsertionArray {
 		
 	}
 	
-	public static void insertAtLastPosition() {
-		int num[]= {10,20,30,40,50};
-		int elementToinsert = 25;
-		int elementAtIndex = num.length;
+	public static void insertAtLastPosition(int []num,int elementToinsert, int elementAtIndex) {
 		int num1[] =new int[num.length +1];
 		System.out.println("Array before :" +Arrays.toString(num));
 		for(int i = 0,j=0; i<num1.length;i++) {
