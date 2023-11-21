@@ -5,14 +5,14 @@ public class OrderAgonostic {
 	public static void main(String[] args) {
 		//int [] nums= {2,4,6,9,11,12,14,20,36,48};
 		int [] nums= {90,80,75,22,11,10,5,2,-3};
-		int target = 22;
+		int target = 10;
 		int ans = OrderAgonosticBS(nums,target);
 		System.out.println(ans);
 	}
 
 	private static int OrderAgonosticBS(int[]arr,int target) {
-		int start =0;
-		int end=arr.length-1;	
+		int start =0 ;
+		int end = arr.length-1;	
 		while(start <= end) {
 			int mid= start +(end-start)/2;
 			if(arr[mid]==target) {
