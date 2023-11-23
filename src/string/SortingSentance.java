@@ -9,8 +9,6 @@ public class SortingSentance {
 		System.out.println(sortSentence(s));
 
 	}
-	
-	
 
 	public static String sortSentence(String s) {
 		 String [] str = s.split(" ");
